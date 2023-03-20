@@ -7,6 +7,10 @@ return {
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
     wrap = false, -- sets vim.opt.wrap
+    mouse = "", -- Enable mouse support
+    shiftwidth = 4, -- Number of space inserted for indentation
+    showtabline = 4, -- always display tabline
+    tabstop = 4, -- Number of space in a tab
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
