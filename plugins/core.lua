@@ -21,6 +21,7 @@ return {
     end,
   },
   {"reanxp/neovim-ayu"},
+  {"akinsho/toggleterm.nvim", opts = {open_mapping = [[<C-\>]]} },
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --
