@@ -22,6 +22,17 @@ return {
   },
   {"reanxp/neovim-ayu"},
   {"akinsho/toggleterm.nvim", opts = {open_mapping = [[<C-\>]]} },
+  -- 开启相对行。参考自 https://github.com/nvim-neo-tree/neo-tree.nvim/issues/608
+  {"nvim-neo-tree/neo-tree.nvim",  opts = { event_handlers = {
+      {
+        event = "neo_tree_buffer_enter",
+        handler = function(arg)
+          vim.cmd [[
+            setlocal relativenumber
+          ]]
+        end,
+      } } } 
+    },
   -- You can disable default plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --
